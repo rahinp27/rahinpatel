@@ -1,0 +1,43 @@
+/* Quote Section */
+.quote-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .quote-container {
+    background-color: #1f2833; /* Background color for the quote box */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px;
+    display: inline-block; /* To fit the quote box around the text */
+    max-width: 1000px; /* Maximum width for the quote box */
+    margin: 0 auto; /* Center the quote box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    position: relative; /* To position the folded corner */
+    color: #fff; /* Text color */
+  }
+  
+  /* Folded corner effect */
+  .quote-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 30px solid #66fcf1; /* Folded corner color */
+    border-left: 30px solid transparent; /* Transparent left border */
+    border-radius: 0 10px 0 0; /* Rounded corner for the folded effect */
+  }
+  
+  .quote-text {
+    font-style: italic; /* Italic style for the quote text */
+    font-size: 1.8em; /* Increase font size */
+    margin-bottom: 10px; /* Space between quote text and author */
+  }
+  
+  .quote-author {
+    text-align: right; /* Align author name to the right */
+    font-size: 1.5em; /* Slightly smaller font size for the author name */
+    margin-top: 0; /* Remove top margin */
+  }
+  

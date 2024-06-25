@@ -1,0 +1,28 @@
+/* Default state for nav-link */
+.nav-link {
+    background-color: #66fcf1; /* Current background color */
+    color: black; /* Text color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: to round the corners */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Hover state for nav-link */
+  .navbar .nav-link:hover {
+    background-color: rgb(255, 205, 0); /* Yellow hover background color */
+    color: black !important; /* Hover text color */
+  }
+  
+  
+  /* Active state for nav-link */
+  .nav-link.active {
+    background-color: rgb(255, 180, 0); /* Adjusted active background color to match the theme */
+    color: black !important; /* Active text color */
+  }
+  .navbar ul li a.nav-link {
+    color: black !important;
+  }
+  
+  /* .navbar ul li a.nav-link.active {
+    color: black !important;
+  } */
